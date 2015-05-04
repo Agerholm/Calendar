@@ -20,6 +20,18 @@
             android:name=".ViewPlanner"
             android:label="@string/title_activity_view_planner" >
         </activity>
+        <activity
+            android:name=".ViewOversigt"
+            android:label="@string/title_activity_view_oversigt" >
+        </activity>
+        <activity
+            android:name=".ViewKategori"
+            android:label="@string/title_activity_view_kategori" >
+        </activity>
+        <activity
+            android:name=".ViewIndenfor"
+            android:label="@string/title_activity_view_indenfor" >
+        </activity>
     </application>
 
 </manifest>

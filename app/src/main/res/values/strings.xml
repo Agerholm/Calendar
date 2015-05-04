@@ -4,4 +4,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_view_planner">ViewPlanner</string>
+    <string name="title_activity_view_oversigt">ViewOversigt</string>
+    <string name="title_activity_view_kategori">ViewKategori</string>
+    <string name="title_activity_view_indenfor">ViewIndenfor</string>
 </resources>

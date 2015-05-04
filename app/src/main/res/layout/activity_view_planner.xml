@@ -6,7 +6,108 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.yourdomain.calendar.ViewPlanner">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tilføj aktivitet til"
+        android:id="@+id/textView6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textIsSelectable="true"
+        android:textSize="20dp" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></ScrollView>
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Onsdag"
+    android:id="@+id/button5"
+    android:layout_below="@+id/textView6"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+        android:onClick="onsdag"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="New Button"
+    android:id="@+id/button6"
+    android:layout_marginTop="29dp"
+    android:layout_below="@+id/button5"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignRight="@+id/button5"
+    android:layout_alignEnd="@+id/button5" />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="New Button"
+    android:id="@+id/button7"
+    android:layout_marginTop="32dp"
+    android:layout_below="@+id/button6"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignRight="@+id/button6"
+    android:layout_alignEnd="@+id/button6" />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="New Button"
+    android:id="@+id/button8"
+    android:layout_marginTop="28dp"
+    android:layout_below="@+id/button7"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignRight="@+id/button7"
+    android:layout_alignEnd="@+id/button7" />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="New Button"
+    android:id="@+id/button9"
+    android:layout_marginTop="34dp"
+    android:layout_below="@+id/button8"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignRight="@+id/button8"
+    android:layout_alignEnd="@+id/button8" />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="New Button"
+    android:id="@+id/button10"
+    android:layout_marginTop="29dp"
+    android:layout_below="@+id/button9"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignRight="@+id/button9"
+    android:layout_alignEnd="@+id/button9" />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="New Button"
+    android:id="@+id/button11"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+    </LinearLayout>
 </RelativeLayout>

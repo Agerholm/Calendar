@@ -8,19 +8,19 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class ViewHomeScreen extends ActionBarActivity {
+public class ViewIndenfor extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_home_screen);
+        setContentView(R.layout.activity_view_indenfor);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_view_home_screen, menu);
+        getMenuInflater().inflate(R.menu.menu_view_indenfor, menu);
         return true;
     }
 
@@ -38,16 +38,5 @@ public class ViewHomeScreen extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    //Opens overview
-    public void oversigt(View view) {
-        Intent intent = new Intent (this, ViewOversigt.class);
-            startActivity(intent);
-    }
-    //Opens planner
-    public void planner(View view) {
-        Intent intent = new Intent (this, ViewPlanner.class);
-        startActivity(intent);
-    }
-
 
 }
