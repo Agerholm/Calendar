@@ -32,6 +32,14 @@
             android:name=".ViewIndenfor"
             android:label="@string/title_activity_view_indenfor" >
         </activity>
+        <activity
+            android:name=".ViewActivityPlanner"
+            android:label="@string/title_activity_view_activity_planner" >
+        </activity>
+        <activity
+            android:name=".ViewAdded"
+            android:label="@string/title_activity_view_added" >
+        </activity>
     </application>
 
 </manifest>

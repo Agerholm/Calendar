@@ -10,10 +10,12 @@
         android:layout_height="wrap_content"
         android:text="Oversigt"
         android:id="@+id/button"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="167dp"
-        android:onClick="oversigt"/>
+        android:onClick="oversigt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/button2" />
 
     <Button
         android:layout_width="wrap_content"
@@ -21,29 +23,35 @@
         android:text="Planlægger"
         android:id="@+id/button2"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="planner"/>
+        android:onClick="planner"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Statistikker"
         android:id="@+id/button3"
+        android:onClick="stats"
         android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp"
-        android:onClick="stats"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Om Appen"
         android:id="@+id/button4"
+        android:onClick="about"
         android:layout_below="@+id/button3"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_marginTop="49dp"
-        android:onClick="about"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -10,7 +10,8 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1">
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,85 +39,45 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Støve af"
-            android:id="@+id/button15" />
+            android:id="@+id/button15"
+            android:layout_weight="0.24"
+            android:onClick="støveaf"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Lave mad"
-            android:id="@+id/button16" />
+            android:id="@+id/button16"
+            android:layout_weight="0.31" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Motions cykle"
-            android:id="@+id/button17" />
+            android:id="@+id/button17"
+            android:layout_weight="0.26" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="New Button"
-            android:id="@+id/button18" />
+            android:id="@+id/button18"
+            android:layout_weight="0.32" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="New Button"
-            android:id="@+id/button19" />
+            android:id="@+id/button19"
+            android:layout_weight="0.31" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="New Button"
-            android:id="@+id/button20" />
+            android:id="@+id/button20"
+            android:layout_weight="0.40" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button21" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button22" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button23" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button24" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button25" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button26" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button27" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button28" />
     </LinearLayout>
 
     </ScrollView>

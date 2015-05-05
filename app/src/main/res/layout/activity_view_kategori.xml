@@ -32,23 +32,31 @@
         android:id="@+id/button12"
         android:layout_marginTop="59dp"
         android:layout_below="@+id/textView8"
-        android:layout_centerHorizontal="true"
-        android:onClick="indenfor"/>
+        android:onClick="indenfor"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Udenfor"
         android:id="@+id/button13"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/button12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button12"
+        android:layout_alignEnd="@+id/button12" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Favoritter"
         android:id="@+id/button14"
-        android:layout_marginTop="48dp"
         android:layout_below="@+id/button13"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

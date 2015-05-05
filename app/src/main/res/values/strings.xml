@@ -7,4 +7,6 @@
     <string name="title_activity_view_oversigt">ViewOversigt</string>
     <string name="title_activity_view_kategori">ViewKategori</string>
     <string name="title_activity_view_indenfor">ViewIndenfor</string>
+    <string name="title_activity_view_activity_planner">ViewActivityPlanner</string>
+    <string name="title_activity_view_added">ViewAdded</string>
 </resources>
