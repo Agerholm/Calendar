@@ -52,5 +52,6 @@
         android:id="@+id/button22"
         android:layout_alignTop="@+id/button21"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="oversigt"/>
 </RelativeLayout>

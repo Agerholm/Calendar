@@ -9,4 +9,7 @@
     <string name="title_activity_view_indenfor">ViewIndenfor</string>
     <string name="title_activity_view_activity_planner">ViewActivityPlanner</string>
     <string name="title_activity_view_added">ViewAdded</string>
+    <string name="min">Min</string>
+    <string name="varighed">Varighed</string>
+    <string name="aktivitet1"></string>
 </resources>

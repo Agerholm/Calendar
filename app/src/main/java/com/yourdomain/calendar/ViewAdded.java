@@ -1,10 +1,12 @@
 package com.yourdomain.calendar;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.view.View;
+import android.widget.TextView;
 
 public class ViewAdded extends ActionBarActivity {
 
@@ -12,7 +14,11 @@ public class ViewAdded extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_added);
-    }
+
+
+        }
+
+
 
 
     @Override
@@ -35,5 +41,9 @@ public class ViewAdded extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public void oversigt(View view){
+        Intent intent = new Intent (this, ViewOversigt.class);
+                startActivity(intent);
     }
 }

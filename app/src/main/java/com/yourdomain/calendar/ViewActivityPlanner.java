@@ -36,21 +36,8 @@ public class ViewActivityPlanner extends ActionBarActivity {
             text.append(støveAf);
 
             NumberPicker np = (NumberPicker) findViewById(R.id.numberPicker);
-            np.setMaxValue(9);
-            np.setMinValue(0);
-
-            NumberPicker np2 = (NumberPicker) findViewById(R.id.numberPicker2);
-            np2.setMaxValue(9);
-            np2.setMinValue(0);
-
-            NumberPicker np3 = (NumberPicker) findViewById(R.id.numberPicker3);
-            np3.setMaxValue(9);
-            np3.setMinValue(0);
-
-            NumberPicker np4 = (NumberPicker) findViewById(R.id.numberPicker4);
-            np4.setMaxValue(9);
-            np4.setMinValue(0);
-
+            np.setMaxValue(99);
+            np.setMinValue(10);
 
         }
     }
@@ -79,6 +66,7 @@ public class ViewActivityPlanner extends ActionBarActivity {
 
     public void tilføj(View view) {
         Intent intent = new Intent(this, ViewAdded.class);
+        intent.putExtra(støveAf,støveAf);
         startActivity(intent);
 
     }

@@ -1,9 +1,13 @@
 package com.yourdomain.calendar;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import static com.yourdomain.calendar.ViewIndenfor.støveAf;
 
 
 public class ViewOversigt extends ActionBarActivity {
@@ -12,8 +16,15 @@ public class ViewOversigt extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_oversigt);
-    }
 
+        Intent intent = getIntent();
+        if (intent != null) {
+            intent.getStringExtra(støveAf);
+
+            TextView text = (TextView) findViewById(R.id.textView14);
+            text.append(støveAf);
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
