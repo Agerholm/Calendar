@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import static com.yourdomain.calendar.ViewIndenfor.støveAf;
+import static com.yourdomain.calendar.ViewActivityPlanner.getVal;
 
 
 public class ViewOversigt extends ActionBarActivity {
@@ -22,12 +23,20 @@ public class ViewOversigt extends ActionBarActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        Intent intent = getIntent();
-        if (intent != null) {
+       /* Intent intent = getIntent();
+        if (intent  != null) {
             intent.getStringExtra(støveAf);
-
             TextView text = (TextView) findViewById(R.id.textView14);
             text.append(støveAf);
+                            */
+
+        //}
+
+      Intent intent2 = getIntent();
+        if (intent2  != null) {
+            intent2.getStringExtra(getVal);
+            TextView text2 = (TextView) findViewById(R.id.textView18);
+            text2.append(getVal);
         }
     }
 

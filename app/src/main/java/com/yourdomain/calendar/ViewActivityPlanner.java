@@ -24,6 +24,10 @@ import static com.yourdomain.calendar.ViewIndenfor.støveAf;
 
 public class ViewActivityPlanner extends ActionBarActivity {
 
+    NumberPicker np;
+    public static String getVal;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,11 +44,20 @@ public class ViewActivityPlanner extends ActionBarActivity {
             TextView text = (TextView) findViewById(R.id.textView11);
             text.append(støveAf);
 
-            NumberPicker np = (NumberPicker) findViewById(R.id.numberPicker);
+            np = (NumberPicker) findViewById(R.id.numberPicker);
             np.setMaxValue(99);
             np.setMinValue(10);
 
+
         }
+    }
+
+
+    int dur = np.getValue();
+
+    public String getVal(){
+
+        return Integer.toString(dur);
     }
 
     @Override
@@ -70,11 +83,15 @@ public class ViewActivityPlanner extends ActionBarActivity {
     }
 
     public void tilføj(View view) {
-        Intent intent = new Intent(this, ViewAdded.class);
-        intent.putExtra(støveAf,støveAf);
-        startActivity(intent);
+        Intent intent2 = new Intent(this, ViewOversigt.class);
+     //   intent2.putExtra(støveAf,støveAf);
+        intent2.putExtra(getVal,getVal);
 
+        Intent intent = new Intent(this, ViewAdded.class);
+
+        startActivity(intent);
     }
+
 }
 
 

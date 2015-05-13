@@ -17,8 +17,8 @@ public class ViewAdded extends ActionBarActivity {
         setContentView(R.layout.activity_view_added);
 
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+       // ActionBar actionBar = getSupportActionBar();
+        //actionBar.hide();
         }
 
     @Override

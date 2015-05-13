@@ -45,11 +45,13 @@ public class ViewIndenfor extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }   //Activity chosen and intent sent to the Activity Planner. (With the numberpicker).
         public void støveaf(View view){
             Intent intent = new Intent(this, ViewActivityPlanner.class);
         intent.putExtra(støveAf, støveAf);
 
             startActivity(intent);
         }
+
+
 }

@@ -43,6 +43,7 @@ public class ViewKategori extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    //Category chosen and intent sent to ViewIndenfor.
     public void indenfor(View view){
         Intent intent = new Intent(this, ViewIndenfor.class);
         startActivity(intent);
