@@ -4,29 +4,16 @@ import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View.OnClickListener;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.NumberPicker;
-import android.widget.PopupWindow;
-import android.widget.TextView;
-import android.view.ViewGroup.LayoutParams;
+import android.widget.Toast;
 
-import org.w3c.dom.Text;
 
 import static com.yourdomain.calendar.ViewIndenfor.støveAf;
 
 
 public class ViewActivityPlanner extends ActionBarActivity {
-
-    NumberPicker np;
-    public static String getVal;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,29 +23,9 @@ public class ViewActivityPlanner extends ActionBarActivity {
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
-
-        Intent intent = getIntent();
-        if (null != intent) {
-            intent.getStringExtra(støveAf);
-
-            TextView text = (TextView) findViewById(R.id.textView11);
-            text.append(støveAf);
-
-            np = (NumberPicker) findViewById(R.id.numberPicker);
-            np.setMaxValue(99);
-            np.setMinValue(10);
-
-
-        }
     }
 
 
-    int dur = np.getValue();
-
-    public String getVal(){
-
-        return Integer.toString(dur);
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -83,15 +50,23 @@ public class ViewActivityPlanner extends ActionBarActivity {
     }
 
     public void tilføj(View view) {
-        Intent intent2 = new Intent(this, ViewOversigt.class);
-     //   intent2.putExtra(støveAf,støveAf);
-        intent2.putExtra(getVal,getVal);
+       Intent intent2 = new Intent(this, ViewOversigt.class);
+       intent2.putExtra(støveAf,støveAf);
+
 
         Intent intent = new Intent(this, ViewAdded.class);
 
         startActivity(intent);
+
+        }
+    public void twenty(View view){
+        Toast.makeText(this,"Varighed sat til 20 minutter",Toast.LENGTH_SHORT).show();
     }
 
+
+    public void ten(View view){
+        Toast.makeText(this,"Varighed sat til 10 minutter",Toast.LENGTH_SHORT).show();
+    }
 }
 
 

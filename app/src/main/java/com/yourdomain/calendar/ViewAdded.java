@@ -17,8 +17,8 @@ public class ViewAdded extends ActionBarActivity {
         setContentView(R.layout.activity_view_added);
 
 
-       // ActionBar actionBar = getSupportActionBar();
-        //actionBar.hide();
+       ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
         }
 
     @Override
@@ -44,6 +44,11 @@ public class ViewAdded extends ActionBarActivity {
     }
     public void oversigt(View view){
         Intent intent = new Intent (this, ViewOversigt.class);
-                startActivity(intent);
+            startActivity(intent);
+    }
+
+    public void ta(View view){
+        Intent intent = new Intent (this, ViewKategori.class);
+            startActivity(intent);
     }
 }

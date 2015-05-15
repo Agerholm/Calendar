@@ -1,41 +1,32 @@
 package com.yourdomain.calendar;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import static com.yourdomain.calendar.ViewIndenfor.støveAf;
+import android.widget.Button;
 
 
-
-public class ViewOversigt extends ActionBarActivity {
+public class ViewUdenfor extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_oversigt);
-
+        setContentView(R.layout.activity_view_udenfor);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        Intent intent = getIntent();
-        if (intent != null) {
-            intent.getStringExtra(støveAf);
-            TextView text = (TextView) findViewById(R.id.textView14);
-            text.append(støveAf);
-        }
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_view_oversigt, menu);
+        getMenuInflater().inflate(R.menu.menu_view_udenfor, menu);
         return true;
     }
 
@@ -54,13 +45,10 @@ public class ViewOversigt extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void check(View view){
-        Toast.makeText(this,"Aktiviteten er gennemført!",Toast.LENGTH_LONG).show();
-
+    public void feje(View view){
+        Intent intent = new Intent(this, ViewActivityPlanner.class);
+        startActivity(intent);
     }
 
 
-    public void uncheck(View view){
-        Toast.makeText(this,"Aktiviteten er annulleret",Toast.LENGTH_LONG).show();
-    }
 }

@@ -40,6 +40,10 @@
             android:name=".ViewAdded"
             android:label="@string/title_activity_view_added" >
         </activity>
+        <activity
+            android:name=".ViewUdenfor"
+            android:label="@string/title_activity_view_udenfor" >
+        </activity>
     </application>
 
 </manifest>

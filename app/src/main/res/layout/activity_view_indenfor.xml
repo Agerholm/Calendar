@@ -3,11 +3,12 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FDFFFF"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.yourdomain.calendar.ViewIndenfor"
     android:fillViewport="true">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical"
@@ -16,7 +17,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Onsdag 8/4"
+        android:text="Lørdag 16/5"
         android:id="@+id/textView9"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -36,53 +37,83 @@
         android:layout_gravity="center_horizontal" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Støve af"
-            android:id="@+id/button15"
-            android:layout_weight="0.24"
-            android:onClick="støveaf"
-            android:textSize="25dp" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lave mad"
-            android:id="@+id/button16"
-            android:layout_weight="0.31"
-            android:textSize="25dp" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
             android:text="Motions cykle"
             android:id="@+id/button17"
-            android:layout_weight="0.26"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            android:layout_alignTop="@+id/button16"
+            android:layout_alignRight="@+id/button16"
+            android:layout_alignEnd="@+id/button16" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="New Button"
+            android:layout_width="219dp"
+            android:layout_height="80dp"
+            android:text="Rydde op"
+            android:id="@+id/button16"
+            android:textSize="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/button15" />
+
+        <Button
+            android:layout_width="219dp"
+            android:layout_height="80dp"
+            android:text="Støvesuge"
+            android:id="@+id/button15"
+            android:onClick="støvsuge"
+            android:textSize="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/button17"
+            android:layout_alignStart="@+id/button17" />
+
+        <Button
+            android:layout_width="218dp"
+            android:layout_height="80dp"
+            android:text="Vaskegulv"
             android:id="@+id/button18"
-            android:layout_weight="0.32"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            android:layout_below="@+id/button15"
+            android:layout_alignRight="@+id/button15"
+            android:layout_alignEnd="@+id/button15"
+            android:layout_marginTop="50dp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button19"
-            android:layout_weight="0.31"
-            android:textSize="25dp" />
+        <ImageButton
+            android:background="@drawable/question"
+            android:layout_width="70dp"
+            android:layout_height="70dip"
+            android:id="@+id/imageButton5"
+            android:layout_gravity="right"
+            android:layout_weight="0.11"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="lyd"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button20"
-            android:layout_weight="0.40" />
+        <ImageButton
+            android:background="@drawable/question"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:id="@+id/imageButton4"
+            android:layout_gravity="right"
+            android:layout_weight="0.11"
+            android:layout_alignTop="@+id/button17"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
-    </LinearLayout>
+        <ImageButton
+            android:background="@drawable/question"
+            android:layout_width="70dp"
+            android:layout_height="70dip"
+            android:id="@+id/imageButton6"
+            android:layout_gravity="right"
+            android:layout_weight="0.11"
+            android:layout_alignTop="@+id/button18"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
 
     </ScrollView>

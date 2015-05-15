@@ -48,4 +48,8 @@ public class ViewKategori extends ActionBarActivity {
         Intent intent = new Intent(this, ViewIndenfor.class);
         startActivity(intent);
     }
-}
+    public void udenfor(View view){
+        Intent intent = new Intent(this, ViewUdenfor.class);
+        startActivity(intent);
+
+}}

@@ -1,6 +1,7 @@
 package com.yourdomain.calendar;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -8,11 +9,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class ViewIndenfor extends ActionBarActivity {
 
-    public static String støveAf = "Støve af";
+    public static String støveAf = "Støvsuge";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,13 +47,19 @@ public class ViewIndenfor extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }   //Activity chosen and intent sent to the Activity Planner. (With the numberpicker).
-        public void støveaf(View view){
+    }
+     //Activity chosen and intent sent to the Activity Planner. (With the numberpicker).
+    public void støvsuge(View view){
             Intent intent = new Intent(this, ViewActivityPlanner.class);
         intent.putExtra(støveAf, støveAf);
-
             startActivity(intent);
         }
+
+    public void lyd (View v){
+    MediaPlayer mp = MediaPlayer.create(this, R.raw.optagelse);
+    mp.start();
+    }
+
 
 
 }

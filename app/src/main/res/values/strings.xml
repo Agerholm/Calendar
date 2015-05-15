@@ -12,4 +12,5 @@
     <string name="min">Min</string>
     <string name="varighed">Varighed</string>
     <string name="aktivitet1"></string>
+    <string name="title_activity_view_udenfor">ViewUdenfor</string>
 </resources>
